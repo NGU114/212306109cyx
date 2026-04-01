@@ -1,6 +1,9 @@
 package com.cyx212306109.common;
 
 public enum ResultCode {
+    USER_HAS_EXISTED(4001,"该用户名已被注册"), //在ResultCode枚举类中追加以下状态码,注意格式规范(逗号分隔,分号结尾)
+    USER_NOT_EXIST(4002,"该用户不存在"),
+    PASSWORD_ERROR(4003,"账号或密码错误"),
     // 基础状态码
     SUCCESS(200, "操作成功"),
     ERROR(500, "系统繁忙，请稍后再试"),
